@@ -5,54 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Oráculo Rihanna</title>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=Space+Mono&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: #fff;
-      color: #000;
-      font-family: 'Space Mono', monospace;
-      text-align: center;
-      transition: background 0.6s, color 0.6s;
-    }
-    h1 {
-      font-family: 'Bodoni Moda', serif;
-      font-style: italic;
-      font-weight: 500;
-      font-size: clamp(2rem, 6vw, 4rem);
-      margin: 0 20px 40px;
-    }
-    #disco {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      background: #000;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-      font-size: 1rem;
-    }
-    #cancion {
-      margin-top: 30px;
-      font-size: 1.4rem;
-      min-height: 2rem;
-    }
-    #descripcion {
-      max-width: 40ch;
-      margin: 12px 20px 0;
-      line-height: 1.5;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>¿Qué canción de Rihanna eres?</h1>
-  <button id="disco">girar</button>
+
+  <button id="disco">
+    <img src="img/rihanna.jpg" alt="Rihanna">
+    <span>girar</span>
+  </button>
+
+  <div id="vinilo">
+    <img id="portada" src="" alt="">
+  </div>
+
   <p id="cancion"></p>
   <p id="descripcion"></p>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
