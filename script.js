@@ -34,7 +34,7 @@ const canciones = [
   {
     nombre: "Work",
     artista: "Rihanna ft. Drake",
-    color: "#f97316",
+    color: "#f50e6e",
     audio: "audio/work.mp3",
     portada: "img/work.jpg",
     descripcion: "Eres esta canción porque nunca paras y siempre llevas el ritmo."
@@ -58,7 +58,7 @@ const canciones = [
   {
     nombre: "Stay",
     artista: "Rihanna ft. Mikky Ekko",
-    color: "#fffee8",
+    color: "#ffb875",
     audio: "audio/stay.mp3",
     portada: "img/stay.jpg",
     descripcion: "Eres esta canción porque sientes muy fuerte, aunque no lo digas."
@@ -118,7 +118,8 @@ function girar() {
 }
 
 function lanzarSerpentinas(color) {
-  const colores = [color, "#ffffff", "#000000"];
+  const colores = [color, "#ff0000", "#ff8c00", " #fff01f", "#33e22000", "#2eeefb", "#2642f8", "#931cfa", "#ff13f7", "#fb0775"
+  ];
 
   // Una ráfaga desde cada lado
   confetti({
